@@ -3,17 +3,21 @@ import { createStitches } from "@stitches/react";
 export const { styled, getCssText, css } = createStitches({
     theme: {
         fonts: {
-            system: "Inter, apple-system, sans-serif",
+            ubuntu: "ubuntu",
         },
         colors: {
-            primary: "#0275d8",
-            success: "#5cb85c",
-            info: "#5bc0de",
-            warning: "#f0ad4e",
-            danger: "#d9534f",
-            inverse: "#292b2c",
-            faded: "#f7f7f7",
+            black: "#0C0C0C",
+            primary: "#6809EE",
+            border: "#E1E6F1",
+            gray: "#E1E6F1",
+            success: "#73FF8D",
+            warning: "#F9FF3C",
+            danger: "#FF264A",
         },
-        fontSizes: {},
+        fontSizes: {
+            64: "64px",
+            20: "20px",
+            16: "16px",
+        },
     },
 });

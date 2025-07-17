@@ -4,10 +4,11 @@ const ButtonStyle = styled("button", {
     height: 50,
     width: 100,
     backgroundColor: "$primary",
-    color: "$faded",
+    color: "$gray",
     border: 0,
     padding: 10,
     borderRadius: 20,
+    fontFamily: "$ubuntu",
     fontSize: "1.1rem",
     cursor: "pointer",
     transition: "ease-out 0.5s",
@@ -18,6 +19,10 @@ const ButtonStyle = styled("button", {
 
     "&:active": {
         backgroundColor: "blue",
+    },
+
+    "&:focus-visible": {
+        outline: 0,
     },
 });
 
