@@ -6,4 +6,8 @@ export const globalStyles = globalCss({
         padding: 0,
         boxSizing: "border-box",
     },
+    body: {
+        display: "flex",
+        justifyContent: "center",
+    },
 });

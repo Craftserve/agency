@@ -1,29 +1,54 @@
 import { styled } from "./../../../../../stitches.config";
+import type * as Stitches from "@stitches/react";
 
 const ButtonStyle = styled("button", {
-    height: 50,
-    width: 100,
-    backgroundColor: "$primary",
-    color: "$gray",
+    height: "54px",
+    width: "183px",
+    padding: "10px",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    gap: "5px",
+    borderRadius: "10px",
     border: 0,
-    padding: 10,
-    borderRadius: 20,
     fontFamily: "$ubuntu",
-    fontSize: "1.1rem",
-    cursor: "pointer",
-    transition: "ease-out 0.5s",
+    fontSize: "18px",
 
-    "&:hover": {
-        backgroundColor: "Aqua",
-    },
+    variants: {
+        color: {
+            primary: {
+                backgroundColor: "$black",
+                color: "$border",
+                fontWeight: "bolder",
+                boxShadow: "0px 2px 6px black",
 
-    "&:active": {
-        backgroundColor: "blue",
-    },
+                "&:hover": {
+                    background: "#0c0c0cee",
+                },
+            },
+            secondary: {
+                backgroundColor: "$border",
+                color: "$black",
+                fontWeight: "bolder",
+            },
+            outlined: {
+                border: "1px solid $primary",
+                backgroundColor: "transparent",
+                color: "$primary",
+                fontWeight: "bolder",
+                textAlign: "left",
+                gap: "12px",
 
-    "&:focus-visible": {
-        outline: 0,
+                "&:hover": {
+                    borderColor: "white",
+                    backgroundColor: "$primary",
+                    color: "white",
+                },
+            },
+        },
     },
 });
+
+export type ButtonVariants = Stitches.VariantProps<typeof ButtonStyle>;
 
 export default ButtonStyle;
