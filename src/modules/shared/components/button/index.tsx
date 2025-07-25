@@ -1,8 +1,8 @@
-import React from "react";
+import React, { type ButtonHTMLAttributes } from "react";
 import ButtonStyle from "./style";
 import type { ButtonVariants } from "./style";
 
-interface Props {
+interface Props extends Omit<ButtonHTMLAttributes<HTMLButtonElement>, "color"> {
     children: string | React.ReactNode | React.ReactNode[];
     colorVariant: ButtonVariants["color"];
     height?: string;
@@ -11,12 +11,8 @@ interface Props {
 }
 
 const Button = ({ children, colorVariant, height, width, fontSize }: Props) => {
-    const handleClick = (): void => {
-        console.log("OK");
-    };
-
     return (
-        <ButtonStyle color={colorVariant} css={{ height, width, fontSize }} onClick={handleClick}>
+        <ButtonStyle color={colorVariant} css={{ height, width, fontSize }}>
             {children}
         </ButtonStyle>
     );
