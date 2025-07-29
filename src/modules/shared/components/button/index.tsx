@@ -8,11 +8,12 @@ interface Props extends Omit<ButtonHTMLAttributes<HTMLButtonElement>, "color"> {
     height?: string;
     width?: string;
     fontSize?: string;
+    padding?: string;
 }
 
-const Button = ({ children, colorVariant, height, width, fontSize }: Props) => {
+const Button = ({ children, colorVariant, height, width, fontSize, padding }: Props) => {
     return (
-        <ButtonStyle color={colorVariant} css={{ height, width, fontSize }}>
+        <ButtonStyle color={colorVariant} css={{ height, width, fontSize, padding }}>
             {children}
         </ButtonStyle>
     );
