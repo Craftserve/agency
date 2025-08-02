@@ -1,7 +1,7 @@
 import { styled } from "./../../../../../stitches.config";
 
-const WrapperStyle = styled("div", {
-    height: "100vh",
+const LayoutStyle = styled("div", {
+    minHeight: "100vh",
     width: "100%",
     maxWidth: "1600px",
     padding: "0px 20px",
@@ -10,4 +10,4 @@ const WrapperStyle = styled("div", {
     alignItems: "center",
 });
 
-export default WrapperStyle;
+export default LayoutStyle;

@@ -11,11 +11,10 @@ const ButtonStyle = styled("button", {
     gap: "5px",
     borderRadius: "10px",
     border: 0,
-    fontFamily: "$ubuntu",
-    fontSize: "18px",
+    fontSize: "$sm",
 
     variants: {
-        color: {
+        variant: {
             primary: {
                 backgroundColor: "$black",
                 color: "$border",

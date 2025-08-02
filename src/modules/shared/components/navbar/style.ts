@@ -1,33 +1,13 @@
-import { keyframes } from "@stitches/react";
 import ButtonStyle from "../button/style";
 import { styled } from "./../../../../../stitches.config";
 
-const openMenu = keyframes({
-    "0%": {
-        transform: "scaleY(0)",
-    },
-    "100%": {
-        transform: "scaleY(1s)",
-    },
-});
-
-const closeMenu = keyframes({
-    "0%": {
-        transform: "scaleY(1)",
-    },
-    "100%": {
-        transform: "scaleY(0)",
-    },
-});
-
 export const NavbarStyle = styled("nav", {
     height: "66px",
-    width: "100vw",
+    width: "100%",
     backgroundColor: "white",
-    fontSize: "$16",
+    fontSize: "$xs",
     fontWeight: "900",
     letterSpacing: "-0.5px",
-    fontFamily: "$ubuntu",
     position: "fixed",
     top: "0",
     left: "0",
@@ -36,79 +16,86 @@ export const NavbarStyle = styled("nav", {
     alignItems: "center",
     padding: "0px 20px",
 
-    ".logo-wrap": {
-        height: "100%",
-        width: "115px",
+    ".hamburger-menu": {
+        "@lg": { display: "none" },
+    },
+});
+
+export const LogoWrapStyle = styled("div", {
+    height: "100%",
+    width: "115px",
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center",
+    userSelect: "none",
+});
+
+export const LogoStyle = styled("img", {
+    height: "38px",
+    width: "34px",
+});
+
+export const MenuStyle = styled("div", {
+    backgroundColor: "$border",
+    width: "100%",
+    position: "fixed",
+    top: "66px",
+    right: "0",
+    maxHeightOrigin: "top",
+    overflow: "hidden",
+    maxHeight: "0px",
+    transition: ".5s",
+
+    "@md": {
+        backgroundColor: "transparent",
         display: "flex",
+        flexDirection: "row",
         justifyContent: "space-between",
         alignItems: "center",
-        userSelect: "none",
+        height: "100%",
+        width: "auto",
+        position: "unset",
+        padding: "0",
+        gap: "0",
+        maxHeight: "999px",
     },
 
-    ".logo-img": {
-        height: "38px",
-        width: "34px",
-    },
-
-    ".nav-menu": {
-        backgroundColor: "$border",
-        flexDirection: "column",
-        width: "100%",
-        position: "fixed",
-        top: "66px",
-        right: "0",
-        listStyleType: "none",
-        gap: "10px",
-        padding: "10px 5px",
-        transformOrigin: "top",
-
-        li: {
-            height: "48px",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-
-            button: {
-                padding: "0",
+    variants: {
+        isOpen: {
+            true: {
+                maxHeight: "999px",
             },
         },
-        "@md": {
-            backgroundColor: "transparent",
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "space-between",
-            alignItems: "center",
-            height: "100%",
-            width: "250px",
-            position: "unset",
-            padding: "0",
-            gap: "0",
-        },
+    },
+});
+
+export const MenuListStyle = styled("ul", {
+    height: "100%",
+    width: "100%",
+    listStyleType: "none",
+    display: "flex",
+    flexDirection: "column",
+    padding: "10px 5px",
+
+    "@md": {
+        gap: "30px",
+        flexDirection: "row",
+    },
+});
+
+export const MenuItemStyle = styled("li", {
+    height: "48px",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+
+    button: {
+        padding: "0",
     },
 
     ".nav-link": {
         color: "$black",
         textDecoration: "none",
-    },
-
-    ".hamburger-menu": {
-        "@lg": { display: "none" },
-    },
-
-    ".invisible": {
-        display: "none",
-    },
-
-    ".visible": {
-        display: "flex",
-    },
-
-    ".openMenu": {
-        animation: `${openMenu} 0.5s forwards`,
-    },
-
-    ".closeMenu": {
-        animation: `${closeMenu} 0.5s forwards`,
     },
 });
 

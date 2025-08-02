@@ -15,9 +15,11 @@ export const { styled, getCssText, css } = createStitches({
             danger: "#FF264A",
         },
         fontSizes: {
-            64: "64px",
-            20: "20px",
-            16: "16px",
+            xlg: "128px",
+            lg: "64px",
+            md: "20px",
+            sm: "18px",
+            xs: "16px",
         },
     },
     media: {

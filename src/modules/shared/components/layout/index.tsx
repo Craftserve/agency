@@ -1,11 +1,11 @@
-import WrapperStyle from "./style";
+import LayoutStyle from "./style";
 
 interface Props {
-    children: React.ReactNode;
+    children: React.ReactNode | React.ReactNode[];
 }
 
 const Layout = ({ children }: Props) => {
-    return <WrapperStyle>{children}</WrapperStyle>;
+    return <LayoutStyle>{children}</LayoutStyle>;
 };
 
 export default Layout;
