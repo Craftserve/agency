@@ -89,10 +89,6 @@ export const MenuItemStyle = styled("li", {
     justifyContent: "center",
     alignItems: "center",
 
-    button: {
-        padding: "0",
-    },
-
     ".nav-link": {
         color: "$black",
         textDecoration: "none",

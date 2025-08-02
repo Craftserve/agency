@@ -16,11 +16,11 @@ const HeroScreen = () => {
                         <FaPhoneAlt />
                         Dołącz do nas
                     </Button>
-                    <Button variant="secondary" height="62px" width="121px">
+                    <Button variant="secondary">
                         <FaPhoneAlt />
                         Kontakt
                     </Button>
-                    <Button variant="outlined" height="54px" width="187px">
+                    <Button variant="outlined">
                         <IoIosInformationCircle size="1.8em" />
                         <Box display="flex" direction="column">
                             <span style={{ fontSize: "14px", fontWeight: "normal" }}>dowiedz się</span>

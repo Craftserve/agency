@@ -2,8 +2,6 @@ import { styled } from "./../../../../../stitches.config";
 import type * as Stitches from "@stitches/react";
 
 const ButtonStyle = styled("button", {
-    height: "54px",
-    width: "183px",
     padding: "10px",
     display: "flex",
     justifyContent: "center",

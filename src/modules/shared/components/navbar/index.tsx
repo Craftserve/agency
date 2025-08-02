@@ -36,7 +36,7 @@ const Navbar = () => {
                         </Link>
                     </MenuItemStyle>
                     <MenuItemStyle>
-                        <Button colorVariant="secondary" height="48px" width="113px" fontSize="16px">
+                        <Button variant="secondary" fontSize="16px">
                             <FaPhoneAlt />
                             Kontakt
                         </Button>
