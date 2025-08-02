@@ -9,5 +9,6 @@ export const globalStyles = globalCss({
     body: {
         display: "flex",
         justifyContent: "center",
+        fontFamily: "$ubuntu",
     },
 });

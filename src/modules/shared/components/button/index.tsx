@@ -4,15 +4,14 @@ import type { ButtonVariants } from "./style";
 
 interface Props extends Omit<ButtonHTMLAttributes<HTMLButtonElement>, "color"> {
     children: string | React.ReactNode | React.ReactNode[];
-    colorVariant: ButtonVariants["color"];
-    height?: string;
-    width?: string;
+    variant: ButtonVariants["variant"];
     fontSize?: string;
+    padding?: string;
 }
 
-const Button = ({ children, colorVariant, height, width, fontSize }: Props) => {
+const Button = ({ children, variant, fontSize, padding }: Props) => {
     return (
-        <ButtonStyle color={colorVariant} css={{ height, width, fontSize }}>
+        <ButtonStyle variant={variant} css={{ fontSize, padding }}>
             {children}
         </ButtonStyle>
     );

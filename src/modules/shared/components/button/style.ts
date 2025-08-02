@@ -2,8 +2,6 @@ import { styled } from "./../../../../../stitches.config";
 import type * as Stitches from "@stitches/react";
 
 const ButtonStyle = styled("button", {
-    height: "54px",
-    width: "183px",
     padding: "10px",
     display: "flex",
     justifyContent: "center",
@@ -11,11 +9,10 @@ const ButtonStyle = styled("button", {
     gap: "5px",
     borderRadius: "10px",
     border: 0,
-    fontFamily: "$ubuntu",
-    fontSize: "18px",
+    fontSize: "$sm",
 
     variants: {
-        color: {
+        variant: {
             primary: {
                 backgroundColor: "$black",
                 color: "$border",
