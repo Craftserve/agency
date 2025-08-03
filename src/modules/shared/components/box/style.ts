@@ -1,7 +1,7 @@
 import { styled } from "./../../../../../stitches.config";
 import type * as Stitches from "@stitches/react";
 
-const BoxStyle = styled("div", {
+const StyledBox = styled("div", {
     padding: "0",
     margin: "0",
     gap: "0",
@@ -30,6 +30,6 @@ const BoxStyle = styled("div", {
     },
 });
 
-export type BoxVariants = Stitches.VariantProps<typeof BoxStyle>;
+export type BoxVariants = Stitches.VariantProps<typeof StyledBox>;
 
-export default BoxStyle;
+export default StyledBox;

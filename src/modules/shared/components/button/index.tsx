@@ -1,5 +1,5 @@
 import React, { type ButtonHTMLAttributes } from "react";
-import ButtonStyle from "./style";
+import StyledButton from "./style";
 import type { ButtonVariants } from "./style";
 
 interface Props extends Omit<ButtonHTMLAttributes<HTMLButtonElement>, "color"> {
@@ -11,9 +11,9 @@ interface Props extends Omit<ButtonHTMLAttributes<HTMLButtonElement>, "color"> {
 
 const Button = ({ children, variant, fontSize, padding }: Props) => {
     return (
-        <ButtonStyle variant={variant} css={{ fontSize, padding }}>
+        <StyledButton variant={variant} css={{ fontSize, padding }}>
             {children}
-        </ButtonStyle>
+        </StyledButton>
     );
 };
 

@@ -1,7 +1,7 @@
-import ButtonStyle from "../button/style";
+import StyledButton from "../button/style";
 import { styled } from "./../../../../../stitches.config";
 
-export const NavbarStyle = styled("nav", {
+export const StyledNavbar = styled("nav", {
     height: "66px",
     width: "100%",
     backgroundColor: "white",
@@ -35,7 +35,7 @@ export const LogoStyle = styled("img", {
     width: "34px",
 });
 
-export const MenuStyle = styled("div", {
+export const StyledMenu = styled("div", {
     backgroundColor: "$border",
     width: "100%",
     position: "fixed",
@@ -69,7 +69,7 @@ export const MenuStyle = styled("div", {
     },
 });
 
-export const MenuListStyle = styled("ul", {
+export const StyledMenuList = styled("ul", {
     height: "100%",
     width: "100%",
     listStyleType: "none",
@@ -83,7 +83,7 @@ export const MenuListStyle = styled("ul", {
     },
 });
 
-export const MenuItemStyle = styled("li", {
+export const StyledMenuItem = styled("li", {
     height: "48px",
     display: "flex",
     justifyContent: "center",
@@ -95,7 +95,7 @@ export const MenuItemStyle = styled("li", {
     },
 });
 
-export const HamburgerButton = styled(ButtonStyle, {
+export const StyledHamburgerButton = styled(StyledButton, {
     backgroundColor: "$gray",
     height: "40px",
     width: "40px",

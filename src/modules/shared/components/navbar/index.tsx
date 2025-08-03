@@ -1,11 +1,11 @@
 import {
-    NavbarStyle,
+    StyledNavbar,
     LogoWrapStyle,
     LogoStyle,
-    MenuStyle,
-    MenuItemStyle,
-    HamburgerButton,
-    MenuListStyle,
+    StyledMenu,
+    StyledMenuItem,
+    StyledHamburgerButton,
+    StyledMenuList,
 } from "./style";
 import logo from "./../../../../assets/icons/LogoDark.svg";
 import { Link } from "react-router-dom";
@@ -22,31 +22,31 @@ const Navbar = () => {
     };
 
     return (
-        <NavbarStyle>
+        <StyledNavbar>
             <LogoWrapStyle>
                 <LogoStyle src={logo} alt="logo" />
                 <span>Vitresoft</span>
             </LogoWrapStyle>
 
-            <MenuStyle isOpen={isMenuOpen}>
-                <MenuListStyle>
-                    <MenuItemStyle>
+            <StyledMenu isOpen={isMenuOpen}>
+                <StyledMenuList>
+                    <StyledMenuItem>
                         <Link className="nav-link" to="/whyus">
                             Dlaczego my
                         </Link>
-                    </MenuItemStyle>
-                    <MenuItemStyle>
+                    </StyledMenuItem>
+                    <StyledMenuItem>
                         <Button variant="secondary" fontSize="16px">
                             <FaPhoneAlt />
                             Kontakt
                         </Button>
-                    </MenuItemStyle>
-                </MenuListStyle>
-            </MenuStyle>
-            <HamburgerButton onClick={toggleMenu}>
+                    </StyledMenuItem>
+                </StyledMenuList>
+            </StyledMenu>
+            <StyledHamburgerButton onClick={toggleMenu}>
                 <IoMenu />
-            </HamburgerButton>
-        </NavbarStyle>
+            </StyledHamburgerButton>
+        </StyledNavbar>
     );
 };
 
