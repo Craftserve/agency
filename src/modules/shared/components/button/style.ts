@@ -1,7 +1,7 @@
 import { styled } from "./../../../../../stitches.config";
 import type * as Stitches from "@stitches/react";
 
-const ButtonStyle = styled("button", {
+const StyledButton = styled("button", {
     padding: "10px",
     display: "flex",
     justifyContent: "center",
@@ -10,6 +10,7 @@ const ButtonStyle = styled("button", {
     borderRadius: "10px",
     border: 0,
     fontSize: "$sm",
+    cursor: "pointer",
 
     variants: {
         variant: {
@@ -46,6 +47,6 @@ const ButtonStyle = styled("button", {
     },
 });
 
-export type ButtonVariants = Stitches.VariantProps<typeof ButtonStyle>;
+export type ButtonVariants = Stitches.VariantProps<typeof StyledButton>;
 
-export default ButtonStyle;
+export default StyledButton;

@@ -1,6 +1,6 @@
 import { styled } from "./../../../../../stitches.config";
 
-const LayoutStyle = styled("div", {
+const StyledLayout = styled("div", {
     minHeight: "100vh",
     width: "100%",
     maxWidth: "1600px",
@@ -10,4 +10,4 @@ const LayoutStyle = styled("div", {
     alignItems: "center",
 });
 
-export default LayoutStyle;
+export default StyledLayout;

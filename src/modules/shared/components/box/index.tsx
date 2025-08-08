@@ -1,4 +1,4 @@
-import BoxStyle from "./style";
+import StyledBox from "./style";
 import type { BoxVariants } from "./style";
 
 interface Props {
@@ -27,7 +27,7 @@ const Box = ({
     gap,
 }: Props) => {
     return (
-        <BoxStyle
+        <StyledBox
             display={display}
             direction={direction}
             justifyContent={justifyContent}
@@ -35,7 +35,7 @@ const Box = ({
             css={{ height, width, padding, margin, gap }}
         >
             {children}
-        </BoxStyle>
+        </StyledBox>
     );
 };
 
