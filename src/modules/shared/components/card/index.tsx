@@ -10,11 +10,12 @@ interface Props {
     width: string;
     backgroundColor?: string;
     color?: string;
+    margin?: string;
 }
 
-const Card = ({ children, variant, title, height, width, backgroundColor, color }: Props) => {
+const Card = ({ children, variant, title, height, width, backgroundColor, color, margin }: Props) => {
     return (
-        <StyledCard variant={variant} css={{ height, width, backgroundColor, color }}>
+        <StyledCard variant={variant} css={{ height, width, backgroundColor, color, margin }}>
             <Box
                 display="flex"
                 direction="row"

@@ -5,6 +5,7 @@ import { IoIosInformationCircle } from "react-icons/io";
 import Navbar from "../../modules/shared/components/navbar";
 import Box from "../../modules/shared/components/box";
 import Card from "../../modules/shared/components/card";
+import ImageWrapper from "./style";
 
 const HeroScreen = () => {
     return (
@@ -29,20 +30,26 @@ const HeroScreen = () => {
                             </Box>
                         </Button>
                     </Box>
-                    <Box display="flex" direction="row" gap="30px">
-                        <Card variant="gray" title="Lorem ipsum dolor" height="auto" width="283px">
-                            Sketch circle, ellipse, oval. Circular doodle frame, hand drawn pen stroke
+                    <ImageWrapper>
+                        <Card variant="dark" title="Lorem ipsum dolor" height="300px" width="283px">
+                            PIWOSketch circle, ellipse, oval. Circular doodle frame, hand drawn pen stroke
                             <br />
                             <br />
                             Sketch circle, ellipse, oval. Circular doodle frame, hand drawn pen stroke
                         </Card>
-                        <Card variant="light" title="Lorem ipsum dolor" height="auto" width="283px">
+                        <Card
+                            variant="light"
+                            title="Lorem ipsum dolor"
+                            height="300px"
+                            width="283px"
+                            margin="30px 0px 0px 400px"
+                        >
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus,
                             <br />
                             <br />
                             Sketch circle, ellipse, oval. Circular doodle frame, hand drawn pen stroke
                         </Card>
-                    </Box>
+                    </ImageWrapper>
                 </Box>
             </Layout>
         </>
