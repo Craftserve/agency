@@ -7,20 +7,21 @@ export const StyledCard = styled("div", {
     borderRadius: "12px",
     padding: "0px 20px 30px 20px",
     fontSize: "$md",
-    border: "2.5px solid",
+    border: "2.5px solid ",
     overflowY: "auto",
+    backdropFilter: "blur(32px)",
 
     variants: {
         variant: {
             light: {
-                backgroundColor: "#fffff",
+                backgroundColor: "#E1E6F14D",
                 color: "$black",
-                borderColor: "#ededed",
+                borderColor: "#E5E5E533",
             },
-            gray: {
-                backgroundColor: "Gray",
+            dark: {
+                backgroundColor: "#0C0C0C59",
                 color: "white",
-                borderColor: "LightGray",
+                borderColor: "#E5E5E533",
             },
         },
     },
