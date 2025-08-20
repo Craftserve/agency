@@ -17,7 +17,7 @@ export const StyledNavbar = styled("nav", {
     padding: "0px 20px",
 
     ".hamburger-menu": {
-        "@lg": { display: "none" },
+        "@xl": { display: "none" },
     },
 
     zIndex: "1000",

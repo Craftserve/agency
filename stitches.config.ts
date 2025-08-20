@@ -23,7 +23,7 @@ export const { styled, getCssText, css } = createStitches({
         },
     },
     media: {
-        tel: "(max-width: 1023px)",
+        tel: "(max-width: 1280px)",
         sm: "(min-width: 640px)",
         md: "(min-width: 768px)",
         lg: "(min-width: 1023px)",

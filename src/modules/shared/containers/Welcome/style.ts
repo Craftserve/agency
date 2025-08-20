@@ -2,8 +2,9 @@ import { styled } from "../../../../../stitches.config";
 
 export const Header = styled("span", {
     fontWeight: 700,
+    width: "100%",
 
-    '@lg': {
+    '@xl': {
         fontSize: "50pt",
     },
     '@tel': {
@@ -12,13 +13,13 @@ export const Header = styled("span", {
 })
 
 export const StarsContainer = styled("div", {
-    width: "100%",
     height: "100%",
+    width: "100%",
     zIndex: -1,
     position: "absolute",
     transform: "translateX(-50%) translateY(-50%)",
 
-    '@lg': {
+    '@xl': {
         top: "50%",
         left: "80%",
     },
@@ -26,6 +27,6 @@ export const StarsContainer = styled("div", {
     '@tel': {
         top: "50%",
         left: "50%",
-        opacity: "0.5",
+
     }
 })

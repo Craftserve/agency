@@ -9,12 +9,10 @@ function App() {
     globalStyles();
 
     return (
-        <>
-            <Routes>
-                <Route path="/" element={<HeroScreen />} />
-                <Route path="/whyus" element={<WhyusScreen />} />
-            </Routes>
-        </>
+        <Routes>
+            <Route path="/" element={<HeroScreen />} />
+            <Route path="/whyus" element={<WhyusScreen />} />
+        </Routes>
     );
 }
 

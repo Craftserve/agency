@@ -7,9 +7,8 @@ export const ImageWrapper = styled("div", {
     backgroundPosition: "center",
     backgroundImage: `url("${BG}")`,
     borderRadius: "30px",
-    
 
-    '@lg': {
+    '@xl': {
         position: "relative",
         height: "600px",
         width: "1000px",
@@ -17,8 +16,10 @@ export const ImageWrapper = styled("div", {
 
     '@tel': {
         display: "flex",
-        flexDirection: "column",
+        flexDirection: "row",
+        flexWrap: "wrap",
         alignItems: "center",
+        justifyContent: "center",
         gap: "30px",
         width: "90%",
         padding: "50px 70px",

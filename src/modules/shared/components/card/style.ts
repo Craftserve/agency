@@ -28,7 +28,8 @@ export const StyledCard = styled("div", {
     },
 
     "@tel": {
-        maxWidth: "300px",
+        maxWidth: "70%",
+        minWidth: "200px",
     }
 });
 

@@ -31,11 +31,9 @@ const Welcome = () => {
                     </Button>
                 </Box>
             </Box>
-            <Box height="100%">
-                <StarsContainer>
-                    <img src={starsIconGroup} alt="stars" width="100%" height="100%" />
-                </StarsContainer>
-            </Box>
+            <StarsContainer>
+                <img src={starsIconGroup} alt="stars" style={{width: "100%"}} height="100%" />
+            </StarsContainer>
         </Box>
     )
 }
