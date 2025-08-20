@@ -15,6 +15,7 @@ interface Props {
     backgroundImage?: string;
     backgroundColor?: string;
     borderRadius?: string;
+    position?: string;
 }
 
 const Box = ({
@@ -31,6 +32,7 @@ const Box = ({
     backgroundImage,
     backgroundColor,
     borderRadius,
+    position,
 }: Props) => {
     return (
         <StyledBox
@@ -38,7 +40,7 @@ const Box = ({
             direction={direction}
             justifyContent={justifyContent}
             alignItems={alignItems}
-            css={{ height, width, padding, margin, gap, backgroundImage, backgroundColor, borderRadius }}
+            css={{ height, width, padding, margin, gap, backgroundImage, backgroundColor, borderRadius, position }}
         >
             {children}
         </StyledBox>
