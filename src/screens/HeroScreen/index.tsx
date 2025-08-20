@@ -53,6 +53,10 @@ const HeroScreen = () => {
                             Sketch circle, ellipse, oval. Circular doodle frame, hand drawn pen stroke
                         </Card>
                     </ImageWrapper>
+                    <Box display="flex" direction="column" justifyContent="center" alignItems="center">
+                        <span style={{fontWeight: 700, color: "rgba(12,12,12,1)"}}>Vitresoft 2025</span>
+                        <span style={{fontWeight: 400, color: "rgba(12,12,12,1)"}}>Copyright © 2011 - 2025 Craftserve.</span>
+                    </Box>
                 </Box>
             </Layout>
         </>
