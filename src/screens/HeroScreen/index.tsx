@@ -6,8 +6,11 @@ import Navbar from "../../modules/shared/components/navbar";
 import Box from "../../modules/shared/components/box";
 import Card from "../../modules/shared/components/card";
 import ImageWrapper from "./style";
+import { useTranslation } from "react-i18next";
 
 const HeroScreen = () => {
+    const {t} = useTranslation();
+
     return (
         <>
             <Layout>
@@ -16,17 +19,17 @@ const HeroScreen = () => {
                     <Box display="flex" gap="20px" margin="20px">
                         <Button variant="primary">
                             <FaPhoneAlt />
-                            Dołącz do nas
+                            {t("JoinUs.title")}
                         </Button>
                         <Button variant="secondary">
                             <FaPhoneAlt />
-                            Kontakt
+                            {t("Contact.title")}
                         </Button>
                         <Button variant="outlined">
                             <IoIosInformationCircle size="1.8em" />
                             <Box display="flex" direction="column">
-                                <span style={{ fontSize: "14px", fontWeight: "normal" }}>dowiedz się</span>
-                                <span>Więcej o nas</span>
+                                <span style={{ fontSize: "14px", fontWeight: "normal" }}>{t("FindOut.title")}</span>
+                                <span>{t("MoreAboutUs.title")}</span>
                             </Box>
                         </Button>
                     </Box>
