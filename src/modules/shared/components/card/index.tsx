@@ -5,17 +5,31 @@ import type { CardVariants } from "./style";
 interface Props {
     children: string | React.ReactNode | React.ReactNode[];
     variant: CardVariants["variant"];
-    title: string;
+    title?: string;
     height: string;
     width: string;
     backgroundColor?: string;
     color?: string;
     margin?: string;
+    left?: string;
+    top?: string;
+    transform?: string;
 }
 
-const Card = ({ children, variant, title, height, width, backgroundColor, color, margin }: Props) => {
+const Card = ({ children, variant, title, height, width, backgroundColor, color, margin, left, top, transform }: Props) => {
     return (
-        <StyledCard variant={variant} css={{ height, width, backgroundColor, color, margin }}>
+        <StyledCard variant={variant} css={{ 
+            height, 
+            width, 
+            backgroundColor, 
+            color, 
+            margin,
+            "@xl": {
+                ...(left || top ? { position: "absolute", left, top } : {}),
+                ...( transform && { transform } )
+            },
+        }}
+        >
             <Box
                 display="flex"
                 direction="row"
@@ -39,10 +53,12 @@ const Card = ({ children, variant, title, height, width, backgroundColor, color,
                     <StyledCircleIcon color="danger" />
                 </Box>
             </Box>
-
-            <Box display="flex" width="100%" margin="0px 0px 15px 0px">
-                <StyledTitle>{title}</StyledTitle>
-            </Box>
+            {title && (
+                <Box display="flex" width="100%" margin="0px 0px 15px 0px">
+                    <StyledTitle>{title}</StyledTitle>
+                </Box>
+            )}
+            
             <Box>{children}</Box>
         </StyledCard>
     );

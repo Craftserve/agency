@@ -19,6 +19,8 @@ export const StyledNavbar = styled("nav", {
     ".hamburger-menu": {
         "@lg": { display: "none" },
     },
+
+    zIndex: "1000",
 });
 
 export const LogoWrapStyle = styled("div", {

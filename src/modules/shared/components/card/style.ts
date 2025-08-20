@@ -8,23 +8,28 @@ export const StyledCard = styled("div", {
     padding: "0px 20px 30px 20px",
     fontSize: "$md",
     border: "2.5px solid ",
-    overflowY: "auto",
+    overflowY: "hidden",
     backdropFilter: "blur(32px)",
+    boxShadow: "0px 10px 5px rgba(0,0,0,0.1)",
 
     variants: {
         variant: {
             light: {
-                backgroundColor: "#E1E6F14D",
-                color: "$black",
+                backgroundColor: "rgba(225, 230, 241, 0.3)",
+                color: "rgba(40, 28, 56, 0.8)",
                 borderColor: "#E5E5E533",
             },
             dark: {
-                backgroundColor: "#0C0C0C59",
+                backgroundColor: "rgba(59, 59, 59, 0.3)",
                 color: "white",
                 borderColor: "#E5E5E533",
             },
         },
     },
+
+    "@tel": {
+        maxWidth: "300px",
+    }
 });
 
 export const StyledCircleIcon = styled("div", {
@@ -48,6 +53,7 @@ export const StyledTitle = styled("span", {
     margin: "0",
     lineHeight: "24px",
     textAlign: "left",
+    marginTop: "5px",
 });
 
 export type CardVariants = Stitches.VariantProps<typeof StyledCard>;

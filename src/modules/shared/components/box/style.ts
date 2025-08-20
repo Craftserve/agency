@@ -26,6 +26,7 @@ const StyledBox = styled("div", {
             start: { alignItems: "start" },
             center: { alignItems: "center" },
             end: { alignItems: "end" },
+            spaceBetween: { justifyContent: "space-between"}
         },
     },
 });
