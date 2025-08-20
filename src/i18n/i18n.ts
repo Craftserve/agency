@@ -7,7 +7,6 @@ import en from './en.json'
 const DEFAULT_LANG = "en-US";
 
 const userLang = navigator.language || DEFAULT_LANG;
-console.log(userLang);
 const resources = {
   "pl-PL": pl,
   "en-US": en,
