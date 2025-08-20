@@ -16,20 +16,20 @@ export const StyledCard = styled("div", {
         variant: {
             light: {
                 backgroundColor: "rgba(225, 230, 241, 0.3)",
-                color: "rgba(40, 28, 56, 0.8)",
+                color: "$black",
                 borderColor: "#E5E5E533",
             },
             dark: {
-                backgroundColor: "rgba(59, 59, 59, 0.3)",
+                backgroundColor: `$black80`,
                 color: "white",
                 borderColor: "#E5E5E533",
             },
         },
     },
 
-    "@tel": {
-        maxWidth: "70%",
-        minWidth: "200px",
+    "@sm": {
+        width: "100%",
+        height: "100%",
     }
 });
 

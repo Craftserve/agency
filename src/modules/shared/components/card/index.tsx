@@ -11,12 +11,9 @@ interface Props {
     backgroundColor?: string;
     color?: string;
     margin?: string;
-    left?: string;
-    top?: string;
-    transform?: string;
 }
 
-const Card = ({ children, variant, title, height, width, backgroundColor, color, margin, left, top, transform }: Props) => {
+const Card = ({ children, variant, title, height, width, backgroundColor, color, margin }: Props) => {
     return (
         <StyledCard variant={variant} css={{ 
             height, 
@@ -24,10 +21,6 @@ const Card = ({ children, variant, title, height, width, backgroundColor, color,
             backgroundColor, 
             color, 
             margin,
-            "@xl": {
-                ...(left || top ? { position: "absolute", left, top } : {}),
-                ...( transform && { transform } )
-            },
         }}
         >
             <Box

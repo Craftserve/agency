@@ -1,13 +1,13 @@
 import { styled } from "../../../../../stitches.config";
 
-export const Header = styled("span", {
+export const Header = styled("h1", {
     fontWeight: 700,
     width: "100%",
 
     '@xl': {
         fontSize: "50pt",
     },
-    '@tel': {
+    '@sm': {
         fontSize: "35pt",
     }
 })
@@ -24,7 +24,7 @@ export const StarsContainer = styled("div", {
         left: "80%",
     },
 
-    '@tel': {
+    '@sm': {
         top: "50%",
         left: "50%",
 

@@ -14,7 +14,7 @@ export const ImageWrapper = styled("div", {
         width: "1000px",
     },
 
-    '@tel': {
+    '@sm': {
         display: "flex",
         flexDirection: "row",
         flexWrap: "wrap",
@@ -25,3 +25,50 @@ export const ImageWrapper = styled("div", {
         padding: "50px 70px",
     }
 });
+
+export const FirstCard = styled("div", {
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    "@sm": {
+        maxWidth: "70%",
+        minWidth: "250px",
+    },
+    '@xl': {
+        position: "absolute", 
+        top: 30, 
+        left: 30, 
+    }
+})
+
+export const SecondCard = styled("div", {
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    "@sm": {
+        maxWidth: "70%",
+        minWidth: "250px",
+    },
+    '@xl': {
+        position: "absolute", 
+        top: "35%", 
+        left: "96%", 
+        transform: "translateY(-50%) translateX(-50%)",
+    }
+})
+
+export const ThirdCard = styled("div", {
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    "@sm": {
+        maxWidth: "70%",
+        minWidth: "250px",
+    },
+    '@xl': {
+        position: "absolute", 
+        top: "60%", 
+        left: "56.5%", 
+        transform: "translateY(-50%) translateX(-50%)"
+    }
+})
