@@ -13,9 +13,12 @@ import Button from "../button";
 import { FaPhoneAlt } from "react-icons/fa";
 import { IoMenu } from "react-icons/io5";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
+
+    const {t} = useTranslation();
 
     const toggleMenu = (): void => {
         setIsMenuOpen(!isMenuOpen);
@@ -32,13 +35,13 @@ const Navbar = () => {
                 <StyledMenuList>
                     <StyledMenuItem>
                         <Link className="nav-link" to="/whyus">
-                            Dlaczego my
+                            {t("WhyUs.title")}
                         </Link>
                     </StyledMenuItem>
                     <StyledMenuItem>
                         <Button variant="secondary" fontSize="16px">
                             <FaPhoneAlt />
-                            Kontakt
+                            {t("Contact.title")}
                         </Button>
                     </StyledMenuItem>
                 </StyledMenuList>
