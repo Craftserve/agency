@@ -4,39 +4,39 @@ export const Header = styled("h1", {
     fontWeight: 700,
     width: "100%",
 
-    '@xl': {
+    "@xl": {
         fontSize: "50pt",
     },
-    '@sm': {
+    "@sm": {
         fontSize: "42pt",
     },
-    '@xs': {
-        fontSize: "35pt"
-    }
-})
+    "@xs": {
+        fontSize: "35pt",
+    },
+});
 
 export const StarsContainer = styled("div", {
     height: "100%",
     maxWidth: "400px",
     zIndex: -1,
     position: "absolute",
-    transform: "translateX(-50%) translateY(-50%)",
-    right: "-10%",
+    transform: "translateX(0) translateY(-56%)",
+    right: "10px",
     top: "50%",
 
-    '@xl': {
+    "@xl": {
         width: "400px",
     },
 
-    '@sm': {
+    "@sm": {
         width: "350px",
     },
 
-    '@xs': {
+    "@xs": {
         opacity: "0.5",
     },
 
-    '@xxs': {
+    "@xxs": {
         right: "-30%",
-    }
-})
+    },
+});
