@@ -8,25 +8,35 @@ export const Header = styled("h1", {
         fontSize: "50pt",
     },
     '@sm': {
-        fontSize: "35pt",
+        fontSize: "42pt",
+    },
+    '@xs': {
+        fontSize: "35pt"
     }
 })
 
 export const StarsContainer = styled("div", {
     height: "100%",
-    width: "100%",
+    maxWidth: "400px",
     zIndex: -1,
     position: "absolute",
     transform: "translateX(-50%) translateY(-50%)",
+    right: "-10%",
+    top: "50%",
 
     '@xl': {
-        top: "50%",
-        left: "80%",
+        width: "400px",
     },
 
     '@sm': {
-        top: "50%",
-        left: "50%",
+        width: "350px",
+    },
 
+    '@xs': {
+        opacity: "0.5",
+    },
+
+    '@xxs': {
+        right: "-30%",
     }
 })

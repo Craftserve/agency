@@ -21,8 +21,12 @@ export const ImageWrapper = styled("div", {
         alignItems: "center",
         justifyContent: "center",
         gap: "30px",
-        width: "90%",
+        width: "100%",
         padding: "50px 70px",
+    },
+
+    '@xs': {
+        width: "90%",
     }
 });
 

@@ -38,7 +38,7 @@ const Offers = () => {
                 <Card 
                     variant="dark" 
                     title="Lorem ipsum dolor" 
-                    height="300px" 
+                    height="auto" 
                     width="283px"
                 >
                     PIWOSketch circle, ellipse, oval. Circular doodle frame, hand drawn pen stroke
@@ -52,7 +52,7 @@ const Offers = () => {
                 <Card
                     variant="light"
                     title="Lorem ipsum dolor"
-                    height="300px"
+                    height="auto"
                     width="283px"
                 >
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus,
@@ -65,7 +65,7 @@ const Offers = () => {
             <ThirdCard>
                 <Card
                     variant="dark"
-                    height="350px"
+                    height="auto"
                     width="450px"
                 >
                     <Box
