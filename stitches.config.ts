@@ -7,6 +7,7 @@ export const { styled, getCssText, css } = createStitches({
         },
         colors: {
             black: "#0C0C0C",
+            black80: "#0C0C0C2b",
             primary: "#6809EE",
             border: "#E1E6F1",
             gray: "#E1E6F1",
@@ -23,10 +24,12 @@ export const { styled, getCssText, css } = createStitches({
         },
     },
     media: {
-        sm: "(min-width: 640px)",
+        xxs: "(max-width: 500px)",
+        xs: "(max-width: 1000px)",
+        sm: "(max-width: 1280px)",
         md: "(min-width: 768px)",
-        lg: "(min-width: 1024px)",
-        xl: "(min-width: 1280px)",
+        lg: "(min-width: 1023px)",
+        xl: "(min-width: 1281px)",
         xxl: "(min-width: 1536px)",
     },
 });

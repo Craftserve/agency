@@ -10,5 +10,8 @@ export const globalStyles = globalCss({
         display: "flex",
         justifyContent: "center",
         fontFamily: "$ubuntu",
+        width: "100%",
+        height: "100vh",
+        overflowX: "hidden",
     },
 });

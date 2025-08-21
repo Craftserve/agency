@@ -18,7 +18,7 @@ const StyledButton = styled("button", {
                 backgroundColor: "$black",
                 color: "$border",
                 fontWeight: "bolder",
-                boxShadow: "0px 2px 6px black",
+                boxShadow: "0px 6px 5px rgba(0, 0, 0, 0.33)",
 
                 "&:hover": {
                     background: "#0c0c0cee",
